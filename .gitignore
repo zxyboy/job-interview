@@ -28,7 +28,7 @@ hs_err_pid*
 job-interview.iml
 
 algorithm/target
-.gitignore
+
 .idea/.gitignore
 .idea/checkstyle-idea.xml
 .idea/codeStyles/
