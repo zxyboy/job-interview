@@ -1,6 +1,5 @@
-package cn.cupcat.tree;
+package cn.cupcat.stack;
 
-import java.util.Comparator;
 import java.util.LinkedList;
 
 /**

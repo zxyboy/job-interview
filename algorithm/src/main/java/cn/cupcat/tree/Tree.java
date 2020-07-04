@@ -25,7 +25,6 @@ import java.util.stream.Collectors;
  * <p>
  * 2.将未访问的邻接点压入双端链表后面，然后从前面取出并访问（这样就做到了广度优先）
  * https://blog.csdn.net/coder__666/article/details/80349039?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
- *
  */
 public class Tree {
 
@@ -342,22 +341,5 @@ public class Tree {
             }
         }
         return node;
-    }
-}
-
-/**
- * 二叉树结构
- * <p>
- * value ： 保存节点数据
- * left ： 表示左子树
- * right ： 表示右子树
- */
-class TreeNode {
-    int value;
-    TreeNode left;
-    TreeNode right;
-
-    public TreeNode(int value) {
-        this.value = value;
     }
 }
