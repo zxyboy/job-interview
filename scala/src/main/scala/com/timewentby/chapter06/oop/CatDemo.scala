@@ -15,12 +15,13 @@ object CatDemo {
     cat.color = "白色"
     println("ok~")
     printf("\n小猫的信息如下: %s %d %s", cat.name, cat.age, cat.color)
+
   }
 }
 
 //定义一个类Cat
 //一个class Cat 对应的字节码文件只有一个 Cat.class ,默认是public
-class Cat {
+ class Cat {
   //定义/声明三个属性
   //说明
   //1. 当我们声明了 var name :String时, 在底层对应 private name

@@ -21,7 +21,8 @@ object VarParameters {
 //    1
 //  }
 
-  def test(): Unit = { //过程
-
+  def test()= { //过程
+    println("hello")
   }
+
 }

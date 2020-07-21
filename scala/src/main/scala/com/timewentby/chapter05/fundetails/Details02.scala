@@ -5,13 +5,22 @@ object Details02 {
 
     println(getSum2(10, 30)) // ()
 
-    println(getSum3(9,9)) //()
+    println(getSum3(9, 9)) //()
+
+    sum(1, 1, 1)
 
   }
 
+  def sum(n1: Int = 1, n2: Int = 2, n3: Int) = {
+
+    n1 + n2 + n3
+  }
+
+
   //如果写了return ,返回值类型就不能省略
-  def getSum(n1: Int, n2: Int): Int = {
-    return n1 + n2
+
+  def getSum(n1: Int, n2: Int) {
+    n1 + n2
   }
 
   //如果返回值这里什么什么都没有写，即表示该函数没有返回值

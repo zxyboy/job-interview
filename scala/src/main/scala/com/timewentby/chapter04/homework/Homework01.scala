@@ -23,7 +23,7 @@ object Homework01 {
     //见多识广
     var loop = true
     var sum2 = 0
-    for (i <- 1 to 100 if loop == true) {
+    for (i <- 1 to 100 if loop) {
       sum2 += i
       if (sum2 > 20) {
         println("循环守卫实现中断 第一次大于20的当前数=" + i)

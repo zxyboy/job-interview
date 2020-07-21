@@ -12,7 +12,6 @@ object ImplicitDemo01 {
     implicit def f2(f:Float): Int = {
       f.toInt
     }
-
     //这里我们必须保证隐式函数的匹配只能是唯一的.
 //    implicit def f3(f1:Float): Int = {
 //      f1.toInt

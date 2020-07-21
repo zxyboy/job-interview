@@ -9,10 +9,9 @@ object ImplicitClassDemo {
     //看底层..
     implicit class DB1(val m: MySQL1) { //ImplicitClassDemo$DB1$2
       def addSuffix(): String = {
-        m + " scala"
+        Predef.any2stringadd(m) + " scala"
       }
     }
-
 
     //创建一个MySQL1实例
     val mySQL = new MySQL1

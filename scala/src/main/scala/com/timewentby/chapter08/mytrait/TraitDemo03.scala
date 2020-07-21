@@ -6,7 +6,7 @@ object TraitDemo03 {
     //创建sheep
     val sheep = new Sheep
     sheep.sayHi()
-    sheep.sayHello()
+//    sheep.sayHello()
   }
 }
 
@@ -19,9 +19,9 @@ trait Trait03 {
   def sayHi()
 
   //实现普通方法
-  def sayHello(): Unit = {
-    println("say Hello~~")
-  }
+//  def sayHello(): Unit = {
+//    println("say Hello~~")
+//  }
 }
 
 

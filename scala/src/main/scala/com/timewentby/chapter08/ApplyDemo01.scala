@@ -13,6 +13,9 @@ object ApplyDemo01 {
 
     println("pig2.name=" + pig2.name) //小黑猪
     println("pig3.name=" + pig3.name) //匿名猪猪
+
+    val hello = Mouse("hello")
+
   }
 }
 
@@ -20,10 +23,19 @@ object ApplyDemo01 {
 class Pig(pName:String) {
   var name: String = pName
 }
-
 object Pig {
   //编写一个apply
   def apply(pName: String): Pig = new Pig(pName)
 
   def apply(): Pig = new Pig("匿名猪猪")
+}
+
+
+class Mouse(name : String){
+
+}
+
+object Mouse{
+  def apply(name: String): Mouse = new Mouse(name)
+
 }

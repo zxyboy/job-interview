@@ -55,7 +55,6 @@ public class CounterSort {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = tmpArr[i];
         }
-
     }
 
 }

@@ -7,7 +7,6 @@ object MixInPro {
     }
   }
 }
-
 trait DB6  {
   var sal:Int //抽象字段
   var opertype : String = "insert"

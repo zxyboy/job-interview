@@ -23,7 +23,6 @@ object AddTraits {
     //2. 向数据库
     //3. 插入数据 100
     mysql.insert(100)
-
     println("===================================================")
     //练习题
     val mySQL4 = new MySQL4 with  File4 with DB4
@@ -73,6 +72,7 @@ trait File4 extends Data4 { //特质，继承 Data4
     //如果我们希望直接调用Data4的insert方法，可以指定，如下
     //说明：super[?] ?的类型，必须是当前的特质的直接父特质(超类)
     super[Data4].insert(id)
+//    super.insert(id)
   }
 }
 

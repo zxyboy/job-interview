@@ -25,10 +25,8 @@ object WhileBreak {
     breakable {
       while (n <= 20) {
         n += 1
-        println("n=" + n)
+        //        println("n=" + n)
         if (n == 18) {
-          //中断while
-          //说明
           //1. 在scala中使用函数式的break函数中断循环
           //2. def break(): Nothing = { throw breakException }
           break()
@@ -40,10 +38,14 @@ object WhileBreak {
 
     //注意break函数，可以使用在for或者do..while
     breakable {
-      for (i <- 1 to 100) {
-        println("i=" + i)
-        if (i == 20) {
-          break()
+      for (i <- 1 to 3) {
+        breakable {
+          for (j <- 1 to 2) {
+            if (i == 2) {
+              break()
+            }
+            println("i=" + i + ",j = " + j)
+          }
         }
       }
     }

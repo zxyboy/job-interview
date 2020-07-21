@@ -4,7 +4,7 @@ import scala.beans.BeanProperty
 
 object BeanPropertDemo {
   def main(args: Array[String]): Unit = {
-    val car = new Car
+    val car = new Car("j")
     car.name = "宝马"
     println(car.name)
 
@@ -15,6 +15,4 @@ object BeanPropertDemo {
 }
 
 
-class Car {
-  @BeanProperty var name: String = null
-}
+class Car(@BeanProperty var name: String) {}

@@ -12,15 +12,15 @@ object ConDemo03 {
 class Person2 private() {
   var name: String = _
   var age: Int = _
-
-  def this(name : String) {
-    //辅助构造器无论是直接或间接，最终都一定要调用主构造器，执行主构造器的逻辑
-    //而且需要放在辅助构造器的第一行[这点和java一样，java中一个构造器要调用同类的其它构造器，也需要放在第一行]
+  //辅助构造器无论是直接或间接，最终都一定要调用主构造器，执行主构造器的逻辑
+  //而且需要放在辅助构造器的第一行[这点和java一样，java中一个构造器要调用同类的其它构造器，也需要放在第一行]
+  //辅助构造器
+   def this(name : String) {
     this()  //直接调用主构造器
     this.name = name
   }
 
-  //辅助构造器
+
   def this(name : String, age : Int) {
     this() //直接调用主构造器
     this.name = name

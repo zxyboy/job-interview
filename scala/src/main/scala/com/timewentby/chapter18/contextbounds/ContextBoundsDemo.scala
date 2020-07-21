@@ -23,12 +23,8 @@ object ContextBoundsDemo {
 
   }
 }
-
-
 //一个普通的Person类
 class Person4(val name: String, val age: Int) {
-
-  //重写toStirng
   override def toString = this.name + "\t" + this.age
 }
 

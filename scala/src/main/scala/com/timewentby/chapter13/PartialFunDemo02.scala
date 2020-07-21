@@ -9,12 +9,10 @@ object PartialFunDemo02 {
     //2. isDefinedAt(x: Any) 如果返回true ,就会去调用 apply 构建对象实例,如果是false,过滤
     //3. apply 构造器 ,对传入的值 + 1,并返回（新的集合）
     val partialFun = new PartialFunction[Any,Int] {
-
       override def isDefinedAt(x: Any) = {
         println("x=" + x)
         x.isInstanceOf[Int]
       }
-
       override def apply(v1: Any) = {
         println("v1=" + v1)
         v1.asInstanceOf[Int] + 1

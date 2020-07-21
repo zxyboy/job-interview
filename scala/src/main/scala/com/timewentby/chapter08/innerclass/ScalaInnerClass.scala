@@ -4,8 +4,8 @@ package com.timewentby.chapter08.innerclass
 object ScalaInnerClassDemo {
   def main(args: Array[String]): Unit = {
     //测试1. 创建了两个外部类的实例
-    val outer1 : ScalaOuterClass = new ScalaOuterClass();
-    val outer2 : ScalaOuterClass = new ScalaOuterClass();
+    val outer1: ScalaOuterClass = new ScalaOuterClass();
+    val outer2: ScalaOuterClass = new ScalaOuterClass();
 
     //在scala中，创建成员内部类的语法是
     //对象.内部类  的方式创建, 这里语法可以看出在scala中，默认情况下内部类实例和外部对象关联
@@ -24,7 +24,7 @@ object ScalaInnerClassDemo {
 
 
     //创建静态内部类实例
-    val staticInner= new ScalaOuterClass.ScalaStaticInnerClass()
+    val staticInner = new ScalaOuterClass.ScalaStaticInnerClass()
 
 
   }
@@ -64,6 +64,7 @@ class ScalaOuterClass {
       println("name~ = " + myouter.name
         + " sal~ =" + myouter.sal)
     }
+
     //这里有一个方法,可以接受ScalaInnerClass实例
     //下面的 ScalaOuterClass#ScalaInnerClass 类型投影的作用就是屏蔽 外部对象对内部类对象的
     //影响
@@ -72,6 +73,7 @@ class ScalaOuterClass {
     }
 
   }
+
   //定义两个属性
   var name = "jack"
   private var sal = 800.9
@@ -79,6 +81,7 @@ class ScalaOuterClass {
 
 
 object ScalaOuterClass { //伴生对象
-class ScalaStaticInnerClass { //静态内部类
-}
+  class ScalaStaticInnerClass { //静态内部类
+  }
+
 }

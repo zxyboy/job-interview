@@ -9,7 +9,6 @@ object ImplicitValDemo03 {
     def hello(implicit name: String): Unit = {
       println(name + " hello")
     }
-
     hello //底层 hello$1(str1);
 
   }

@@ -7,7 +7,6 @@ object CurryDemo02 {
     def eq(s1: String, s2: String): Boolean = {
       s1.equals(s2)
     }
-
     //隐式类
     implicit class TestEq(s: String) {
       //体现了将比较字符串的事情，分解成两个任务完成
